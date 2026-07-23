@@ -6,6 +6,11 @@ Hệ thống AI Multi-Agent thông minh tích hợp **RAG Hybrid (Vector Embeddi
 
 ## 📐 Sơ Đồ Kiến Trúc & Quy Trình Hoạt Động (Architecture Flowchart)
 
+![Blog Agent Architecture Flowchart](docs/architecture.png)
+
+<details>
+<summary><b>🔍 Xem mã nguồn sơ đồ Mermaid (Mermaid Source Code)</b></summary>
+
 ```mermaid
 graph TD
     User([👤 Người dùng nhập tin nhắn]) --> CS[ChatService: Tiếp nhận tin nhắn]
@@ -93,6 +98,7 @@ graph TD
         Log --> UI[("🖥️ Admin UI: AdminLogs.tsx <br/> (Hiển thị Vết từng bước Step Tracing)")]
     end
 ```
+</details>
 
 ---
 
