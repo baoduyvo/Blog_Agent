@@ -1,0 +1,922 @@
+[
+    {
+        "timestamp": "2026-07-22T15:20:00.000000",
+        "request_metadata": {
+            "http_method": "POST",
+            "url": "http://localhost:8000/api/chat/stream",
+            "client_host": "127.0.0.1"
+        },
+        "input": "Cập nhật các phương pháp quản trị thời gian và nâng cao hiệu suất làm việc mới nhất năm 2026",
+        "guardrail": {
+            "is_safe": true,
+            "failed_step": "Hoàn thành kiểm tra",
+            "steps": [
+                {
+                    "step": "Lớp 1.1 - Kiểm tra null hoặc rỗng",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.1 - Kiểm tra ký tự đặc biệt nguy hiểm",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.1 - So khớp từ khóa nhạy cảm",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.2 - Kiểm duyệt bằng LLM",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 148,
+                        "completion_tokens": 14,
+                        "total_tokens": 162
+                    }
+                },
+                {
+                    "step": "Lớp 1.3 - Phân loại chủ đề bằng LLM",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 314,
+                        "completion_tokens": 28,
+                        "total_tokens": 342
+                    }
+                },
+                {
+                    "step": "Lớp 1.4 - Tạo Vector nhúng (Embedding)",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 42,
+                        "completion_tokens": 0,
+                        "total_tokens": 42
+                    }
+                },
+                {
+                    "step": "Lớp 1.5 - Tìm kiếm tương đồng ngữ nghĩa (Cosine Similarity)",
+                    "status": "passed",
+                    "reason": "Khớp nhất: 'Bí quyết quản lý cảm xúc bế tắc trong công việc' (Score: 0.4181)",
+                    "usage": {
+                        "prompt_tokens": 0,
+                        "completion_tokens": 0,
+                        "total_tokens": 0
+                    }
+                },
+                {
+                    "step": "Lớp 1.6 - Định tuyến tác nhân (WEB_SEARCH)",
+                    "status": "passed",
+                    "reason": "Người dùng yêu cầu thông tin mới nhất về phương pháp quản trị thời gian và nâng cao hiệu suất, phù hợp với nguồn thông tin từ internet.",
+                    "usage": {
+                        "prompt_tokens": 244,
+                        "completion_tokens": 46,
+                        "total_tokens": 290
+                    }
+                },
+                {
+                    "step": "Lớp 2.1 - Lập kế hoạch nghiên cứu (Critic Agent)",
+                    "status": "passed",
+                    "reason": "Từ khóa: phương pháp quản trị thời gian 2026, nâng cao hiệu suất làm việc hiện đại 2026, công cụ quản lý thời gian mới nhất 2026",
+                    "usage": {
+                        "prompt_tokens": 245,
+                        "completion_tokens": 165,
+                        "total_tokens": 410
+                    },
+                    "plan": {
+                        "search_queries": [
+                            "phương pháp quản trị thời gian 2026",
+                            "nâng cao hiệu suất làm việc hiện đại 2026",
+                            "công cụ quản lý thời gian mới nhất 2026"
+                        ],
+                        "key_objectives": [
+                            "Tìm hiểu các phương pháp quản trị thời gian mới nhất được áp dụng năm 2026",
+                            "Khám phá các kỹ thuật nâng cao hiệu suất làm việc trong năm 2026"
+                        ],
+                        "instructions": "Tìm kiếm thông tin từ các nguồn đáng tin cậy như bài báo, nghiên cứu, và blog chuyên ngành."
+                    }
+                },
+                {
+                    "step": "Lớp 2.1b - Kiểm duyệt tập trung kế hoạch (Centralized Plan Guardrail)",
+                    "status": "passed",
+                    "reason": "Kế hoạch tìm kiếm và chỉ dẫn hoàn toàn an toàn",
+                    "usage": {
+                        "prompt_tokens": 614,
+                        "completion_tokens": 42,
+                        "total_tokens": 656
+                    }
+                },
+                {
+                    "step": "Lớp 2.2 - Thực thi nghiên cứu & cào dữ liệu (ResearcherAgent)",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 2584,
+                        "completion_tokens": 1108,
+                        "total_tokens": 3692
+                    }
+                },
+                {
+                    "step": "Lớp 3.1 - Tìm kiếm từ khóa thô (BM25Search)",
+                    "status": "passed",
+                    "reason": "Đã trích xuất 4 tài liệu ứng viên từ kho sách nội bộ (local_knowledge.json)",
+                    "usage": {
+                        "prompt_tokens": 0,
+                        "completion_tokens": 0,
+                        "total_tokens": 0
+                    }
+                },
+                {
+                    "step": "Lớp 3.2 - Thẩm định & So sánh ngữ nghĩa chéo (AgentEvaluator)",
+                    "status": "passed",
+                    "reason": "Đã chọn 2 tài liệu phù hợp nhất từ kho sách",
+                    "usage": {
+                        "prompt_tokens": 320,
+                        "completion_tokens": 85,
+                        "total_tokens": 405
+                    }
+                }
+            ]
+        },
+        "ai_response": "### Kế hoạch Nghiên cứu (Critic Agent)\n**Từ khóa tìm kiếm thông minh:**\n- `phương pháp quản trị thời gian 2026`\n- `nâng cao hiệu suất làm việc hiện đại 2026`\n\n---\n### Kết quả Nghiên Cứu (Researcher Agent):\nBài viết tổng hợp các phương pháp quản lý thời gian mới nhất...\n\n---\n### Tri thức Gối đầu giường từ Sách (BM25 & Cross-semantic Evaluation):\n- **Chủ nghĩa Khắc kỷ**: Cách rèn luyện nội tâm kiên cường trước nghịch cảnh\n- **Chủ nghĩa Khắc kỷ**: Khái niệm Dichotomy of Control (Ranh giới kiểm soát)",
+        "usage": {
+            "prompt_tokens": 4191,
+            "completion_tokens": 1403,
+            "total_tokens": 5594
+        }
+    },
+    {
+        "timestamp": "2026-07-22T15:23:17.223699",
+        "request_metadata": {},
+        "input": "Cần luyện tập ra sao để tự tin phát biểu trước đám đông hoặc truyền đạt ý tưởng rõ ràng?",
+        "guardrail": {
+            "is_safe": true,
+            "failed_step": "Hoàn thành kiểm tra",
+            "steps": [
+                {
+                    "step": "Lớp 1.1 - Kiểm tra null hoặc rỗng",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.1 - Kiểm tra ký tự đặc biệt nguy hiểm",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.1 - So khớp từ khóa nhạy cảm",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.2 - Kiểm duyệt bằng LLM",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 149,
+                        "completion_tokens": 14,
+                        "total_tokens": 163
+                    }
+                },
+                {
+                    "step": "Lớp 1.3 - Phân loại chủ đề bằng LLM",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 315,
+                        "completion_tokens": 28,
+                        "total_tokens": 343
+                    }
+                },
+                {
+                    "step": "Lớp 1.4 - Tạo Vector nhúng (Embedding)",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 46,
+                        "completion_tokens": 0,
+                        "total_tokens": 46
+                    }
+                },
+                {
+                    "step": "Lớp 1.5 - Tìm kiếm tương đồng ngữ nghĩa (Cosine Similarity)",
+                    "status": "passed",
+                    "reason": "Khớp nhất: 'Phương pháp rèn luyện sự tập trung sâu khi làm việc từ xa' (Score: 0.4832)",
+                    "usage": {
+                        "prompt_tokens": 0,
+                        "completion_tokens": 0,
+                        "total_tokens": 0
+                    }
+                },
+                {
+                    "step": "Lớp 1.6 - Định tuyến tác nhân (LOCAL_KNOWLEDGE)",
+                    "status": "passed",
+                    "reason": "Câu hỏi liên quan đến kỹ năng giao tiếp và phát triển bản thân, cần kiến thức kinh điển về phát biểu và truyền đạt ý tưởng.",
+                    "usage": {
+                        "prompt_tokens": 245,
+                        "completion_tokens": 49,
+                        "total_tokens": 294
+                    }
+                },
+                {
+                    "step": "Lớp 2 - Trả dữ liệu từ Tri thức nội bộ (Local Knowledge)",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 0,
+                        "completion_tokens": 0,
+                        "total_tokens": 0
+                    }
+                }
+            ]
+        },
+        "ai_response": "### Chủ nghĩa Khắc kỷ - Cách rèn luyện nội tâm kiên cường trước nghịch cảnh\nTheo chủ nghĩa Khắc kỷ, nghịch cảnh không hại ta, mà chính cách ta phản ứng với nghịch cảnh mới làm tổn thương ta. Thực hành phương pháp 'Negative Visualization' (hình dung về tình huống xấu nhất) giúp ta chuẩn bị tâm lý vững vàng, trân trọng những gì đang có và luôn duy trì trạng thái bình yên trong tâm hồn trước mọi biến cố cuộc đời.\n\n**Thẻ từ khóa:** nghịch cảnh, kiên cường, stoic, khắc kỷ",
+        "usage": {
+            "prompt_tokens": 755,
+            "completion_tokens": 91,
+            "total_tokens": 846
+        }
+    },
+    {
+        "timestamp": "2026-07-22T15:25:09.071636",
+        "request_metadata": {
+            "http_method": "POST",
+            "url": "http://localhost:8000/api/chat",
+            "client_host": "127.0.0.1"
+        },
+        "input": "Phương pháp luyện tập tư duy tự tin",
+        "guardrail": {
+            "is_safe": true,
+            "failed_step": "Hoàn thành kiểm tra",
+            "steps": [
+                {
+                    "step": "Lớp 1.1 - Kiểm tra null hoặc rỗng",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.1 - Kiểm tra ký tự đặc biệt nguy hiểm",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.1 - So khớp từ khóa nhạy cảm",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.2 - Kiểm duyệt bằng LLM",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 134,
+                        "completion_tokens": 14,
+                        "total_tokens": 148
+                    }
+                },
+                {
+                    "step": "Lớp 1.3 - Phân loại chủ đề bằng LLM",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 300,
+                        "completion_tokens": 28,
+                        "total_tokens": 328
+                    }
+                },
+                {
+                    "step": "Lớp 1.4 - Tạo Vector nhúng (Embedding)",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 17,
+                        "completion_tokens": 0,
+                        "total_tokens": 17
+                    }
+                },
+                {
+                    "step": "Lớp 1.5 - Tìm kiếm tương đồng ngữ nghĩa (Cosine Similarity)",
+                    "status": "passed",
+                    "reason": "Khớp nhất: 'Phương pháp rèn luyện sự tập trung sâu khi làm việc từ xa' (Score: 0.5591)",
+                    "usage": {
+                        "prompt_tokens": 0,
+                        "completion_tokens": 0,
+                        "total_tokens": 0
+                    }
+                },
+                {
+                    "step": "Lớp 1.6 - Định tuyến tác nhân (LOCAL_KNOWLEDGE)",
+                    "status": "passed",
+                    "reason": "Câu hỏi liên quan đến các phương pháp phát triển bản thân và tư duy, thuộc tri thức phổ thông.",
+                    "usage": {
+                        "prompt_tokens": 230,
+                        "completion_tokens": 41,
+                        "total_tokens": 271
+                    }
+                },
+                {
+                    "step": "Lớp 2 - Trả dữ liệu từ Tri thức nội bộ (Local Knowledge)",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 0,
+                        "completion_tokens": 0,
+                        "total_tokens": 0
+                    }
+                }
+            ]
+        },
+        "ai_response": "### Chủ nghĩa Khắc kỷ - Cách rèn luyện nội tâm kiên cường trước nghịch cảnh\nTheo chủ nghĩa Khắc kỷ, nghịch cảnh không hại ta, mà chính cách ta phản ứng với nghịch cảnh mới làm tổn thương ta. Thực hành phương pháp 'Negative Visualization' (hình dung về tình huống xấu nhất) giúp ta chuẩn bị tâm lý vững vàng, trân trọng những gì đang có và luôn duy trì trạng thái bình yên trong tâm hồn trước mọi biến cố cuộc đời.\n\n**Thẻ từ khóa:** nghịch cảnh, kiên cường, stoic, khắc kỷ",
+        "usage": {
+            "prompt_tokens": 681,
+            "completion_tokens": 83,
+            "total_tokens": 764
+        }
+    },
+    {
+        "timestamp": "2026-07-22T15:26:36.280281",
+        "request_metadata": {
+            "http_method": "POST",
+            "url": "http://localhost:8000/api/chat",
+            "client_host": "127.0.0.1"
+        },
+        "input": "Làm thế nào để duy trì kỷ luật khi cảm giác hứng thú và động lực ban đầu hoàn toàn biến mất?",
+        "guardrail": {
+            "is_safe": true,
+            "failed_step": "Hoàn thành kiểm tra",
+            "steps": [
+                {
+                    "step": "Lớp 1.1 - Kiểm tra null hoặc rỗng",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.1 - Kiểm tra ký tự đặc biệt nguy hiểm",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.1 - So khớp từ khóa nhạy cảm",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.2 - Kiểm duyệt bằng LLM",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 151,
+                        "completion_tokens": 14,
+                        "total_tokens": 165
+                    }
+                },
+                {
+                    "step": "Lớp 1.3 - Phân loại chủ đề bằng LLM",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 317,
+                        "completion_tokens": 28,
+                        "total_tokens": 345
+                    }
+                },
+                {
+                    "step": "Lớp 1.4 - Tạo Vector nhúng (Embedding)",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 47,
+                        "completion_tokens": 0,
+                        "total_tokens": 47
+                    }
+                },
+                {
+                    "step": "Lớp 1.5 - Tìm kiếm tương đồng ngữ nghĩa (Cosine Similarity)",
+                    "status": "passed",
+                    "reason": "Khớp nhất: 'Chủ nghĩa Khắc kỷ: Cách rèn luyện nội tâm kiên cường trước nghịch cảnh' (Score: 0.5512)",
+                    "usage": {
+                        "prompt_tokens": 0,
+                        "completion_tokens": 0,
+                        "total_tokens": 0
+                    }
+                },
+                {
+                    "step": "Lớp 1.6 - Định tuyến tác nhân (LOCAL_KNOWLEDGE)",
+                    "status": "passed",
+                    "reason": "Câu hỏi liên quan đến triết lý phát triển bản thân và cách duy trì kỷ luật trong cuộc sống.",
+                    "usage": {
+                        "prompt_tokens": 247,
+                        "completion_tokens": 42,
+                        "total_tokens": 289
+                    }
+                },
+                {
+                    "step": "Lớp 2 - Trả dữ liệu từ Tri thức nội bộ (Local Knowledge)",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 0,
+                        "completion_tokens": 0,
+                        "total_tokens": 0
+                    }
+                }
+            ]
+        },
+        "ai_response": "### Chủ nghĩa Khắc kỷ - Cách rèn luyện nội tâm kiên cường trước nghịch cảnh\nTheo chủ nghĩa Khắc kỷ, nghịch cảnh không hại ta, mà chính cách ta phản ứng với nghịch cảnh mới làm tổn thương ta. Thực hành phương pháp 'Negative Visualization' (hình dung về tình huống xấu nhất) giúp ta chuẩn bị tâm lý vững vàng, trân trọng những gì đang có và luôn duy trì trạng thái bình yên trong tâm hồn trước mọi biến cố cuộc đời.\n\n**Thẻ từ khóa:** nghịch cảnh, kiên cường, stoic, khắc kỷ",
+        "usage": {
+            "prompt_tokens": 762,
+            "completion_tokens": 84,
+            "total_tokens": 846
+        }
+    },
+    {
+        "timestamp": "2026-07-22T15:31:25.906091",
+        "request_metadata": {
+            "http_method": "POST",
+            "url": "http://localhost:8000/api/chat",
+            "client_host": "127.0.0.1"
+        },
+        "input": "Làm sao để cân bằng giữa việc ép bản thân bứt phá (pushing limits) và lắng nghe cơ thể/tâm trí để tránh kiệt sức (burnout)?",
+        "guardrail": {
+            "is_safe": false,
+            "failed_step": "Lớp 1.1 - Kiểm tra ký tự đặc biệt nguy hiểm",
+            "steps": [
+                {
+                    "step": "Lớp 1.1 - Kiểm tra null hoặc rỗng",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.1 - Kiểm tra ký tự đặc biệt nguy hiểm",
+                    "status": "failed",
+                    "reason": "Nội dung tin nhắn chứa ký tự đặc biệt nguy hiểm hoặc không được phép."
+                }
+            ]
+        },
+        "ai_response": "Nội dung tin nhắn chứa ký tự đặc biệt nguy hiểm hoặc không được phép.",
+        "usage": {
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "total_tokens": 0
+        }
+    },
+    {
+        "timestamp": "2026-07-22T15:31:33.268805",
+        "request_metadata": {
+            "http_method": "POST",
+            "url": "http://localhost:8000/api/chat",
+            "client_host": "127.0.0.1"
+        },
+        "input": "Làm sao để cân bằng giữa việc ép bản thân bứt phá (pushing limits) và lắng nghe cơ thể/tâm trí để tránh kiệt sức (burnout)?",
+        "guardrail": {
+            "is_safe": false,
+            "failed_step": "Lớp 1.1 - Kiểm tra ký tự đặc biệt nguy hiểm",
+            "steps": [
+                {
+                    "step": "Lớp 1.1 - Kiểm tra null hoặc rỗng",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.1 - Kiểm tra ký tự đặc biệt nguy hiểm",
+                    "status": "failed",
+                    "reason": "Nội dung tin nhắn chứa ký tự đặc biệt nguy hiểm hoặc không được phép."
+                }
+            ]
+        },
+        "ai_response": "Nội dung tin nhắn chứa ký tự đặc biệt nguy hiểm hoặc không được phép.",
+        "usage": {
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "total_tokens": 0
+        }
+    },
+    {
+        "timestamp": "2026-07-22T15:31:56.592316",
+        "request_metadata": {
+            "http_method": "POST",
+            "url": "http://localhost:8000/api/chat",
+            "client_host": "127.0.0.1"
+        },
+        "input": "Tôi có thể biến quá trình rèn luyện thành một niềm vui thay vì cảm giác như một nghĩa vụ ép buộc bằng cách nào?",
+        "guardrail": {
+            "is_safe": true,
+            "failed_step": "Hoàn thành kiểm tra",
+            "steps": [
+                {
+                    "step": "Lớp 1.1 - Kiểm tra null hoặc rỗng",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.1 - Kiểm tra ký tự đặc biệt nguy hiểm",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.1 - So khớp từ khóa nhạy cảm",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.2 - Kiểm duyệt bằng LLM",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 155,
+                        "completion_tokens": 14,
+                        "total_tokens": 169
+                    }
+                },
+                {
+                    "step": "Lớp 1.3 - Phân loại chủ đề bằng LLM",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 321,
+                        "completion_tokens": 28,
+                        "total_tokens": 349
+                    }
+                },
+                {
+                    "step": "Lớp 1.4 - Tạo Vector nhúng (Embedding)",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 59,
+                        "completion_tokens": 0,
+                        "total_tokens": 59
+                    }
+                },
+                {
+                    "step": "Lớp 1.5 - Tìm kiếm tương đồng ngữ nghĩa (Cosine Similarity)",
+                    "status": "passed",
+                    "reason": "Khớp nhất: 'Chủ nghĩa Khắc kỷ: Cách rèn luyện nội tâm kiên cường trước nghịch cảnh' (Score: 0.5732)",
+                    "usage": {
+                        "prompt_tokens": 0,
+                        "completion_tokens": 0,
+                        "total_tokens": 0
+                    }
+                },
+                {
+                    "step": "Lớp 1.6 - Định tuyến tác nhân (LOCAL_KNOWLEDGE)",
+                    "status": "passed",
+                    "reason": "Người dùng đang tìm kiếm tư duy và phương pháp phát triển bản thân liên quan đến việc rèn luyện và tạo động lực trong cuộc sống.",
+                    "usage": {
+                        "prompt_tokens": 251,
+                        "completion_tokens": 48,
+                        "total_tokens": 299
+                    }
+                },
+                {
+                    "step": "Lớp 2 - Trả dữ liệu từ Tri thức nội bộ (Local Knowledge)",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 0,
+                        "completion_tokens": 0,
+                        "total_tokens": 0
+                    }
+                }
+            ]
+        },
+        "ai_response": "### Chủ nghĩa Khắc kỷ - Cách rèn luyện nội tâm kiên cường trước nghịch cảnh\nTheo chủ nghĩa Khắc kỷ, nghịch cảnh không hại ta, mà chính cách ta phản ứng với nghịch cảnh mới làm tổn thương ta. Thực hành phương pháp 'Negative Visualization' (hình dung về tình huống xấu nhất) giúp ta chuẩn bị tâm lý vững vàng, trân trọng những gì đang có và luôn duy trì trạng thái bình yên trong tâm hồn trước mọi biến cố cuộc đời.\n\n**Thẻ từ khóa:** nghịch cảnh, kiên cường, stoic, khắc kỷ",
+        "usage": {
+            "prompt_tokens": 786,
+            "completion_tokens": 90,
+            "total_tokens": 876
+        }
+    },
+    {
+        "timestamp": "2026-07-22T15:34:17.614344",
+        "request_metadata": {
+            "http_method": "POST",
+            "url": "http://localhost:8000/api/chat",
+            "client_host": "127.0.0.1"
+        },
+        "input": "Phương pháp rèn luyện này có dễ dàng tích hợp vào lối sống bận rộn hiện tại của tôi không?",
+        "guardrail": {
+            "is_safe": true,
+            "failed_step": "Hoàn thành kiểm tra",
+            "steps": [
+                {
+                    "step": "Lớp 1.1 - Kiểm tra null hoặc rỗng",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.1 - Kiểm tra ký tự đặc biệt nguy hiểm",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.1 - So khớp từ khóa nhạy cảm",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.2 - Kiểm duyệt bằng LLM",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 151,
+                        "completion_tokens": 14,
+                        "total_tokens": 165
+                    }
+                },
+                {
+                    "step": "Lớp 1.3 - Phân loại chủ đề bằng LLM",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 317,
+                        "completion_tokens": 28,
+                        "total_tokens": 345
+                    }
+                },
+                {
+                    "step": "Lớp 1.4 - Tạo Vector nhúng (Embedding)",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 42,
+                        "completion_tokens": 0,
+                        "total_tokens": 42
+                    }
+                },
+                {
+                    "step": "Lớp 1.5 - Tìm kiếm tương đồng ngữ nghĩa (Cosine Similarity)",
+                    "status": "passed",
+                    "reason": "Khớp nhất: 'Phương pháp rèn luyện sự tập trung sâu khi làm việc từ xa' (Score: 0.5869)",
+                    "usage": {
+                        "prompt_tokens": 0,
+                        "completion_tokens": 0,
+                        "total_tokens": 0
+                    }
+                },
+                {
+                    "step": "Lớp 1.6 - Định tuyến tác nhân (LOCAL_KNOWLEDGE)",
+                    "status": "passed",
+                    "reason": "Câu hỏi liên quan đến các phương pháp rèn luyện và lối sống, phù hợp với kiến thức triết lý phát triển bản thân.",
+                    "usage": {
+                        "prompt_tokens": 247,
+                        "completion_tokens": 48,
+                        "total_tokens": 295
+                    }
+                },
+                {
+                    "step": "Lớp 2 - Tổng hợp phản hồi từ Tri thức nội bộ (Local Knowledge)",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 283,
+                        "completion_tokens": 659,
+                        "total_tokens": 942
+                    }
+                }
+            ]
+        },
+        "ai_response": "## Tích Hợp Phương Pháp Rèn Luyện Vào Lối Sống Bận Rộn\n\n### Dẫn Nhập\nCuộc sống bận rộn đôi khi khiến chúng ta quên đi việc chăm sóc nội tâm và phát triển bản thân. Tuy nhiên, việc rèn luyện tâm hồn không chỉ là một nhiệm vụ một lần mà còn là một hành trình mà bạn có thể dễ dàng tích hợp vào thói quen hàng ngày của mình. \n\n### Phương pháp \"Negative Visualization\"\nLà một phần quan trọng trong chủ nghĩa Khắc kỷ, phương pháp \"Negative Visualization\" (hình dung về tình huống xấu nhất) có thể mang lại sự bình an và kiên cường trong bạn. Tiến hành theo các bước sau:\n\n#### Bước 1: Nhận Diện Duy Trì Cảm Xúc\n- **Thời gian**: Dành 5 phút mỗi sáng hoặc tối để thực hành.\n- **Cách làm**: Tìm một không gian yên tĩnh, ngồi xuống và hít thở sâu. Tập trung vào hiện tại, cảm nhận cơ thể và tâm trí.\n\n#### Bước 2: Hình Dung Tình Huống Xấu Nhất\n- **Thời gian**: 10 phút để suy ngẫm.\n- **Cách làm**: Tưởng tượng những kịch bản xấu nhất có thể xảy ra trong cuộc sống; từ việc mất việc, gặp phải vấn đề sức khỏe đến những phản ứng tiêu cực của người khác.\n- **Mục đích**: Chấp nhận rằng những điều không mong muốn có thể xảy ra giúp bạn chuẩn bị tốt hơn, không phải để lo sợ mà để bình tĩnh ứng phó.\n\n#### Bước 3: Trân Trọng Những Gì Bạn Có\n- **Thời gian**: 5 phút viết nhật ký.\n- **Cách làm**: Liệt kê những điều tốt đẹp trong cuộc sống mà bạn đang có. Hãy cảm nhận lòng biết ơn cho những điều đó.\n- **Mục đích**: Giúp bạn giữ vững thái độ tích cực và trân trọng những gì đang diễn ra xung quanh bạn.\n\n#### Bước 4: Thực Hành Ngày Hàng\n- **Lên lịch**: Thiết lập một lịch trình đều đặn cho việc thực hành này; có thể là mỗi sáng hoặc mỗi tối.\n- **Chia sẻ**: Nếu có thời gian, hãy chia sẻ trải nghiệm của bạn với những người bạn thân, để tạo mối liên kết và hỗ trợ lẫn nhau.\n\n### Kết Luận\nViệc áp dụng phương pháp \"Negative Visualization\" vào cuộc sống bận rộn không chỉ giúp bạn phát triển tâm hồn kiên cường mà còn nâng cao khả năng đối phó với bất ngờ. Hãy nhớ rằng, nghịch cảnh không phải là kẻ thù, mà chính cách bạn phản ứng với chúng sẽ quyết định thái độ và cảm xúc của bạn. Hãy bắt đầu từ hôm nay, để mỗi ngày đều là một cơ hội để trở thành phiên bản tốt hơn của chính mình!",
+        "usage": {
+            "prompt_tokens": 1040,
+            "completion_tokens": 749,
+            "total_tokens": 1789
+        }
+    },
+    {
+        "timestamp": "2026-07-22T15:37:17.537650",
+        "request_metadata": {},
+        "input": "Tôi có thể biến quá trình rèn luyện thành một niềm vui thay vì cảm giác như một nghĩa vụ ép buộc bằng cách nào?",
+        "guardrail": {
+            "is_safe": true,
+            "failed_step": "Hoàn thành kiểm tra",
+            "steps": [
+                {
+                    "step": "Lớp 1.1 - Kiểm tra null hoặc rỗng",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.1 - Kiểm tra ký tự đặc biệt nguy hiểm",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.1 - So khớp từ khóa nhạy cảm",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.2 - Kiểm duyệt bằng LLM",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 155,
+                        "completion_tokens": 14,
+                        "total_tokens": 169
+                    }
+                },
+                {
+                    "step": "Lớp 1.3 - Phân loại chủ đề bằng LLM",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 321,
+                        "completion_tokens": 28,
+                        "total_tokens": 349
+                    }
+                },
+                {
+                    "step": "Lớp 1.4 - Tạo Vector nhúng (Embedding)",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 59,
+                        "completion_tokens": 0,
+                        "total_tokens": 59
+                    }
+                },
+                {
+                    "step": "Lớp 1.5 - Tìm kiếm tương đồng ngữ nghĩa (Cosine Similarity)",
+                    "status": "passed",
+                    "reason": "Khớp nhất: 'Chủ nghĩa Khắc kỷ: Cách rèn luyện nội tâm kiên cường trước nghịch cảnh' (Score: 0.5732)",
+                    "usage": {
+                        "prompt_tokens": 0,
+                        "completion_tokens": 0,
+                        "total_tokens": 0
+                    }
+                },
+                {
+                    "step": "Lớp 1.6 - Định tuyến tác nhân (LOCAL_KNOWLEDGE)",
+                    "status": "passed",
+                    "reason": "Câu hỏi liên quan đến triết lý sống và phát triển bản thân, phù hợp với kiến thức cổ điển.",
+                    "usage": {
+                        "prompt_tokens": 251,
+                        "completion_tokens": 43,
+                        "total_tokens": 294
+                    }
+                },
+                {
+                    "step": "Lớp 2.1 - Lập kế hoạch nghiên cứu (Critic Agent)",
+                    "status": "passed",
+                    "reason": "Từ khóa: cách biến quá trình rèn luyện thành niềm vui, tạo động lực cho việc rèn luyện, các phương pháp giúp yêu thích tập luyện thể thao",
+                    "usage": {
+                        "prompt_tokens": 251,
+                        "completion_tokens": 164,
+                        "total_tokens": 415
+                    },
+                    "plan": {
+                        "search_queries": [
+                            "cách biến quá trình rèn luyện thành niềm vui",
+                            "tạo động lực cho việc rèn luyện",
+                            "các phương pháp giúp yêu thích tập luyện thể thao"
+                        ],
+                        "key_objectives": [
+                            "Khám phá các chiến lược khuyến khích sự vui vẻ trong việc rèn luyện",
+                            "Tìm hiểu tâm lý học về việc tạo thói quen tập luyện tích cực"
+                        ],
+                        "instructions": "Tìm kiếm thông tin chi tiết từ các nguồn uy tín về cách biến quá trình rèn luyện thành niềm vui. Chú ý đến các bài viết, nghiên cứu khoa học, và blog thể thao. Cố gắng tóm tắt các phương pháp và chiến lược hiệu quả để duy trì động lực trong tập luyện."
+                    }
+                },
+                {
+                    "step": "Lớp 2.1b - Kiểm duyệt tập trung kế hoạch (Centralized Plan Guardrail)",
+                    "status": "passed",
+                    "reason": "Kế hoạch tìm kiếm và chỉ dẫn hoàn toàn an toàn",
+                    "usage": {
+                        "prompt_tokens": 614,
+                        "completion_tokens": 42,
+                        "total_tokens": 656
+                    }
+                },
+                {
+                    "step": "Lớp 2.2 - Thực thi nghiên cứu & cào dữ liệu (ResearcherAgent)",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 3119,
+                        "completion_tokens": 1004,
+                        "total_tokens": 4123
+                    }
+                },
+                {
+                    "step": "Lớp 3.1 - Tìm kiếm từ khóa thô (BM25Search)",
+                    "status": "passed",
+                    "reason": "Đã trích xuất 4 tài liệu ứng viên từ kho sách nội bộ",
+                    "usage": {
+                        "prompt_tokens": 0,
+                        "completion_tokens": 0,
+                        "total_tokens": 0
+                    }
+                },
+                {
+                    "step": "Lớp 3.2 - Thẩm định & So sánh ngữ nghĩa chéo (AgentEvaluator)",
+                    "status": "passed",
+                    "reason": "Hai tài liệu được chọn là 'Nhà giả kim - Bài học về việc theo đuổi ước mơ' và 'Chủ nghĩa Khắc kỷ - Cách rèn luyện nội tâm kiên cường trước nghịch cảnh' vì chúng cung cấp những hiểu biết sâu sắc về việc biến quá trình rèn luyện thành một niềm vui. Tài liệu đầu tiên khuyến khích độc giả theo đuổi ước mơ cá nhân, cho thấy rằng việc rèn luyện có thể được xem như một hành trình hướng đến mục tiêu mà ta khát khao, từ đó tạo ra niềm vui trong quá trình thực hiện. Tài liệu thứ hai lại nhấn mạnh tầm quan trọng của việc phản ứng với nghịch cảnh và rèn luyện nội tâm, giúp mỗi người học cách tiếp cận quá trình rèn luyện bằng thái độ tích cực hơn. Cả hai tài liệu đều mang lại cái nhìn tích cực và phương pháp giúp người đọc nhận ra cách để biến quá trình rèn luyện trở thành một phần thú vị và có ý nghĩa trong cuộc sống.",
+                    "usage": {
+                        "prompt_tokens": 586,
+                        "completion_tokens": 245,
+                        "total_tokens": 831
+                    }
+                }
+            ]
+        },
+        "ai_response": "### Kế hoạch Nghiên cứu (Critic Agent)\n**Từ khóa tìm kiếm thông minh:**\n- `cách biến quá trình rèn luyện thành niềm vui`\n- `tạo động lực cho việc rèn luyện`\n- `các phương pháp giúp yêu thích tập luyện thể thao`\n\n**Mục tiêu nghiên cứu:**\n- Khám phá các chiến lược khuyến khích sự vui vẻ trong việc rèn luyện\n- Tìm hiểu tâm lý học về việc tạo thói quen tập luyện tích cực\n\n**Hướng dẫn tác nhân (Research Agent):**\nTìm kiếm thông tin chi tiết từ các nguồn uy tín về cách biến quá trình rèn luyện thành niềm vui. Chú ý đến các bài viết, nghiên cứu khoa học, và blog thể thao. Cố gắng tóm tắt các phương pháp và chiến lược hiệu quả để duy trì động lực trong tập luyện.\n\n---\n### Kết quả Nghiên Cứu (Researcher Agent):\n# Biến Quá Trình Rèn Luyện Thành Niềm Vui\n\nRèn luyện thể chất là một phần quan trọng trong cuộc sống hàng ngày, tuy nhiên, nhiều người thường cảm thấy việc tập luyện trở thành một nghĩa vụ nặng nề. Dưới đây là một số phương pháp và chiến lược để biến quá trình rèn luyện thành một niềm vui, giúp bạn duy trì được động lực và cải thiện sức khỏe.\n\n## 1. Đặt Mục Tiêu Thực Tế\n\nViệc đặt ra các mục tiêu nhỏ và có thể đạt được là cách hiệu quả để bạn cảm thấy hào hứng và không bị áp lực. Thay vì đặt kỳ vọng quá cao, hãy bắt đầu từng bước một và từ từ xây dựng thói quen. Như một chuyên gia tại [The New Gym](https://thenewgym.vn/7-bi-quyet-giup-ban-tim-lai-niem-vui-fitness/) đã chia sẻ, “hành trình vạn dặm bắt đầu bằng một bước chân”. Sự duy trì là nền tảng để đạt được kết quả lâu dài.\n\n### Mẹo: \nHãy phân bổ những ngày tập luyện cố định trong tuần mà bạn chắc chắn có thể tuân thủ. Việc lập kế hoạch cụ thể giúp giảm bớt rào cản tâm lý khi bắt đầu luyện tập.\n\n## 2. Tìm Động Lực Trong Quá Trình\n\nĐiều quan trọng là tìm ra những yếu tố khiến bạn cảm thấy đam mê với việc tập luyện. Việc tập thể dục với một người bạn có thể làm cho quá trình này trở nên thú vị hơn. Như một nghiên cứu chỉ ra, có ai đó để hỗ trợ và cùng bạn tập luyện sẽ tạo sự khác biệt lớn trong cảm xúc và trách nhiệm của bạn. \n\nNgoài ra, hãy tìm các mục tiêu cá nhân hóa, chẳng hạn như tham gia các sự kiện thể thao hoặc chinh phục các cột mốc mới trong quá trình tập.\n\n## 3. Khám Phá Hình Thức Tập Luyện Đa Dạng\n\nCách tập luyện của bạn cũng có thể ảnh hưởng đến cảm xúc trong quá trình rèn luyện. Hãy thử nghiệm với nhiều hình thức khác nhau như yoga, nhảy múa, chạy bộ, hoặc các môn thể thao khác nhau để tìm ra hình thức bạn yêu thích nhất. Như Sunflower Academy giải thích, “niềm vui có thể xuất hiện từ những điều bình dị, và sự kết nối với bản thân qua các hoạt động yêu thích sẽ mang lại hạnh phúc”.\n\n## 4. Sử Dụng Âm Nhạc và Công Nghệ\n\nÂm nhạc có thể tạo động lực rất lớn khi tập luyện. Hãy tạo cho mình danh sách nhạc yêu thích để khai thác tối đa năng lượng khi tập. Ngoài ra, việc sử dụng công nghệ như ứng dụng theo dõi tiến trình tập luyện cũng có thể giúp bạn cảm thấy phấn khích và đạt được thành tựu.\n\n## 5. Tìm Hiểu Và Thay Đổi Tâm Lý\n\nTâm lý đóng vai trò quan trọng trong việc tạo thói quen rèn luyện. Theo một bài viết về tâm lý học, hiểu rõ nhu cầu và tâm lý của bản thân sẽ giúp bạn xây dựng thói quen tích cực hơn. Hiểu rõ lý do \"tại sao\" bạn tập luyện có thể tạo ra động lực mạnh mẽ hơn là chỉ đơn giản là \"phải\" tập luyện.\n\n**Tìm kiếm những yếu tố khiến bạn cảm thấy hào hứng** sẽ giúp bạn duy trì được sự quan tâm và cam kết lâu dài.\n\n## Kết Luận\n\nTập luyện không cần trở thành một nghĩa vụ ép buộc. Bằng cách áp dụng các chiến lược kết hợp lý tưởng từ mục tiêu thực tế, tạo động lực cá nhân, khám phá đa dạng hình thức tập luyện, sử dụng âm nhạc và công nghệ, và nắm bắt tâm lý bản thân, bạn hoàn toàn có thể biến quá trình rèn luyện thành niềm vui. Hãy nhớ rằng, mỗi cái bắt đầu đều quan trọng, và hãy để mỗi buổi tập là một hành trình đầy ý nghĩa.\n\n### Tài Liệu Tham Khảo\n- [The New Gym: 7 Bí Quyết Giúp Bạn Tìm Lại Niềm Vui Fitness](https://thenewgym.vn/7-bi-quyet-giup-ban-tim-lai-niem-vui-fitness/)\n- [Sunflower Academy: Niềm Vui Là Gì?](https://sunfloweracademy.com.vn/niem-vui-la-gi-khai-niem-vai-tro-va-cach-ren-luyen-de-tim-thay-niem-vui-thuc-su-ben-vung/)\n\n---\n### Tri thức Gối đầu giường từ Sách (BM25 & Cross-semantic Evaluation):\n- **Nhà giả kim**: Bài học về việc theo đuổi ước mơ (Personal Legend)\n  *Cuốn sách Nhà giả kim khuyên chúng ta rằng mỗi người đều có một 'Vận mệnh cá nhân' (Personal Legend) để theo đuổi. Khi bạn thực sự khát khao một điều gì đó, cả vũ trụ sẽ hợp lực giúp bạn đạt được nó. Đừng từ bỏ ước mơ chỉ vì những trở ngại ban đầu, bởi vì hành trình đi tìm kho báu chính là quá trình rèn luyện bản thân ý nghĩa nhất.*\n- **Chủ nghĩa Khắc kỷ**: Cách rèn luyện nội tâm kiên cường trước nghịch cảnh\n  *Theo chủ nghĩa Khắc kỷ, nghịch cảnh không hại ta, mà chính cách ta phản ứng với nghịch cảnh mới làm tổn thương ta. Thực hành phương pháp 'Negative Visualization' (hình dung về tình huống xấu nhất) giúp ta chuẩn bị tâm lý vững vàng, trân trọng những gì đang có và luôn duy trì trạng thái bình yên trong tâm hồn trước mọi biến cố cuộc đời.*\n",
+        "usage": {
+            "prompt_tokens": 5356,
+            "completion_tokens": 1540,
+            "total_tokens": 6896
+        }
+    },
+    {
+        "timestamp": "2026-07-22T15:38:56.197262",
+        "request_metadata": {
+            "http_method": "POST",
+            "url": "http://localhost:8000/api/chat",
+            "client_host": "127.0.0.1"
+        },
+        "input": "Phương pháp rèn luyện thói quen dậy sớm và cân bằng giữa công việc với cuộc sống cá nhân hiện đại",
+        "guardrail": {
+            "is_safe": true,
+            "failed_step": "Hoàn thành kiểm tra",
+            "steps": [
+                {
+                    "step": "Lớp 1.1 - Kiểm tra null hoặc rỗng",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.1 - Kiểm tra ký tự đặc biệt nguy hiểm",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.1 - So khớp từ khóa nhạy cảm",
+                    "status": "passed"
+                },
+                {
+                    "step": "Lớp 1.2 - Kiểm duyệt bằng LLM",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 151,
+                        "completion_tokens": 14,
+                        "total_tokens": 165
+                    }
+                },
+                {
+                    "step": "Lớp 1.3 - Phân loại chủ đề bằng LLM",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 317,
+                        "completion_tokens": 28,
+                        "total_tokens": 345
+                    }
+                },
+                {
+                    "step": "Lớp 1.4 - Tạo Vector nhúng (Embedding)",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 49,
+                        "completion_tokens": 0,
+                        "total_tokens": 49
+                    }
+                },
+                {
+                    "step": "Lớp 1.5 - Tìm kiếm tương đồng ngữ nghĩa (Cosine Similarity)",
+                    "status": "passed",
+                    "reason": "Khớp nhất: 'Phương pháp rèn luyện sự tập trung sâu khi làm việc từ xa' (Score: 0.6306)",
+                    "usage": {
+                        "prompt_tokens": 0,
+                        "completion_tokens": 0,
+                        "total_tokens": 0
+                    }
+                },
+                {
+                    "step": "Lớp 1.6 - Định tuyến tác nhân (LOCAL_KNOWLEDGE)",
+                    "status": "passed",
+                    "reason": "Người dùng hỏi về phương pháp và triết lý sống, phù hợp với tri thức kinh điển và phát triển bản thân.",
+                    "usage": {
+                        "prompt_tokens": 247,
+                        "completion_tokens": 45,
+                        "total_tokens": 292
+                    }
+                },
+                {
+                    "step": "Lớp 2.1 - Lập kế hoạch nghiên cứu (Critic Agent)",
+                    "status": "passed",
+                    "reason": "Từ khóa: phương pháp rèn luyện thói quen dậy sớm, cân bằng công việc và cuộc sống cá nhân, chiến lược dậy sớm hiệu quả",
+                    "usage": {
+                        "prompt_tokens": 248,
+                        "completion_tokens": 191,
+                        "total_tokens": 439
+                    },
+                    "plan": {
+                        "search_queries": [
+                            "phương pháp rèn luyện thói quen dậy sớm",
+                            "cân bằng công việc và cuộc sống cá nhân",
+                            "chiến lược dậy sớm hiệu quả"
+                        ],
+                        "key_objectives": [
+                            "Tìm hiểu các phương pháp và kỹ thuật giúp người dùng dậy sớm",
+                            "Khám phá các cách để duy trì sự cân bằng giữa công việc và cuộc sống cá nhân trong bối cảnh hiện đại"
+                        ],
+                        "instructions": "Tác nhân nghiên cứu cần tìm kiếm và thu thập thông tin từ các nguồn đáng tin cậy như bài viết trên các trang web sức khỏe, blog cá nhân, và các tài liệu nghiên cứu. Tìm hiểu các phương pháp rèn luyện thói quen dậy sớm và các chiến lược giúp cân bằng công việc với cuộc sống cá nhân. Lưu ý ghi chú lại các nguồn và trích dẫn nếu cần."
+                    }
+                },
+                {
+                    "step": "Lớp 2.1b - Kiểm duyệt tập trung kế hoạch (Centralized Plan Guardrail)",
+                    "status": "passed",
+                    "reason": "Kế hoạch tìm kiếm và chỉ dẫn hoàn toàn an toàn",
+                    "usage": {
+                        "prompt_tokens": 656,
+                        "completion_tokens": 42,
+                        "total_tokens": 698
+                    }
+                },
+                {
+                    "step": "Lớp 2.2 - Thực thi nghiên cứu & cào dữ liệu (ResearcherAgent)",
+                    "status": "passed",
+                    "usage": {
+                        "prompt_tokens": 3162,
+                        "completion_tokens": 1236,
+                        "total_tokens": 4398
+                    }
+                },
+                {
+                    "step": "Lớp 3.1 - Tìm kiếm từ khóa thô (BM25Search)",
+                    "status": "passed",
+                    "reason": "Đã trích xuất 4 tài liệu ứng viên từ kho sách nội bộ",
+                    "usage": {
+                        "prompt_tokens": 0,
+                        "completion_tokens": 0,
+                        "total_tokens": 0
+                    }
+                },
+                {
+                    "step": "Lớp 3.2 - Thẩm định & So sánh ngữ nghĩa chéo (AgentEvaluator)",
+                    "status": "passed",
+                    "reason": "Tài liệu 2 (Chủ nghĩa Khắc kỷ) đề cập đến cách rèn luyện nội tâm và cách phản ứng trước nghịch cảnh, điều này có thể liên quan đến việc rèn luyện thói quen dậy sớm và đạt được sự cân bằng trong cuộc sống. Các phương pháp Khắc kỷ cũng giúp cá nhân mạnh mẽ hơn trong việc quản lý thời gian và ưu tiên công việc một cách hiệu quả. Tài liệu 3 (Nhà giả kim) tập trung vào việc theo đuổi ước mơ và khát vọng cá nhân, điều này giúp khuyến khích người đọc nhận biết tầm quan trọng của việc có mục tiêu trong cuộc sống, từ đó cải thiện thói quen hàng ngày như dậy sớm. Cả hai tài liệu này hòa hợp với chủ đề viết blog về thói quen và cuộc sống hiện đại.",
+                    "usage": {
+                        "prompt_tokens": 588,
+                        "completion_tokens": 201,
+                        "total_tokens": 789
+                    }
+                }
+            ]
+        },
+        "ai_response": "### Kế hoạch Nghiên cứu (Critic Agent)\n**Từ khóa tìm kiếm thông minh:**\n- `phương pháp rèn luyện thói quen dậy sớm`\n- `cân bằng công việc và cuộc sống cá nhân`\n- `chiến lược dậy sớm hiệu quả`\n\n**Mục tiêu nghiên cứu:**\n- Tìm hiểu các phương pháp và kỹ thuật giúp người dùng dậy sớm\n- Khám phá các cách để duy trì sự cân bằng giữa công việc và cuộc sống cá nhân trong bối cảnh hiện đại\n\n**Hướng dẫn tác nhân (Research Agent):**\nTác nhân nghiên cứu cần tìm kiếm và thu thập thông tin từ các nguồn đáng tin cậy như bài viết trên các trang web sức khỏe, blog cá nhân, và các tài liệu nghiên cứu. Tìm hiểu các phương pháp rèn luyện thói quen dậy sớm và các chiến lược giúp cân bằng công việc với cuộc sống cá nhân. Lưu ý ghi chú lại các nguồn và trích dẫn nếu cần.\n\n---\n### Kết quả Nghiên Cứu (Researcher Agent):\n# Phương Pháp Rèn Luyện Thói Quen Dậy Sớm và Cân Bằng Giữa Công Việc và Cuộc Sống Cá Nhân\n\n## Giới thiệu\n\nTrong xã hội hiện đại, việc duy trì thói quen dậy sớm và cân bằng giữa công việc cùng cuộc sống cá nhân trở thành mối quan tâm hàng đầu của nhiều người. Việc này không chỉ giúp nâng cao năng suất làm việc mà còn cải thiện chất lượng cuộc sống. Dưới đây là một số phương pháp và ý tưởng có thể hỗ trợ bạn trong việc hình thành thói quen dậy sớm và đạt được sự cân bằng cần thiết trong cuộc sống.\n\n## Phương Pháp Rèn Luyện Thói Quen Dậy Sớm\n\n### 1. Thiết lập Thói Quen Ngủ Đúng Giờ\nĐể có thể dậy sớm, việc đầu tiên là phải duy trì một lịch trình ngủ ổn định. Hãy cố gắng đi ngủ và thức dậy vào cùng một thời điểm mỗi ngày, kể cả vào ngày nghỉ. Việc này giúp cơ thể bạn quen với nhịp sinh học tự nhiên và dần dần hình thành thói quen dậy sớm ([Vinmec](https://www.vinmec.com/vie/bai-viet/8-loi-khuyen-ren-luyen-ban-de-thuc-day-vao-buoi-sang-vi)).\n\n### 2. Tạo Môi Trường Ngủ Lý Tưởng\nMôi trường ngủ ảnh hưởng đến chất lượng giấc ngủ. Hãy đảm bảo phòng ngủ tối, yên tĩnh và thoải mái. Tránh sử dụng các thiết bị phát ra ánh sáng xanh trước khi đi ngủ để cải thiện giấc ngủ ([Mytour](https://mytour.vn/vi/blog/bai-viet/meo-quan-trong-top-7-phuong-phap-giup-ban-ren-thoi-quen-day-som-hieu-qua.html)).\n\n### 3. Lập Kế Hoạch Cho Buổi Sáng\nHãy lập kế hoạch cho các hoạt động vào buổi sáng từ tối hôm trước. Việc này không chỉ giúp bạn dễ dàng dậy sớm mà còn đảm bảo rằng bạn có những hoạt động có mục đích ngay từ khi mới thức dậy. Ví dụ, bạn có thể lên kế hoạch cho việc tập thể dục, đọc sách hoặc nghiên cứu ([Mytour](https://mytour.vn/vi/blog/bai-viet/meo-quan-trong-top-7-phuong-phap-giup-ban-ren-thoi-quen-day-som-hieu-qua.html)).\n\n### 4. Tìm Thấy Động Lực\nHãy xác định lý do bạn muốn dậy sớm. Việc có một mục tiêu rõ ràng sẽ khiến bạn có nhiều động lực hơn để duy trì thói quen này. Bạn có thể liệt kê các lợi ích mà việc dậy sớm mang lại, chẳng hạn như thời gian để phát triển bản thân và nâng cao sức khỏe ([Mytour](https://mytour.vn/vi/blog/bai-viet/meo-quan-trong-top-7-phuong-phap-giup-ban-ren-thoi-quen-day-som-hieu-qua.html)).\n\n## Cân Bằng Giữa Công Việc và Cuộc Sống Cá Nhân\n\n### 1. Hiểu Đúng Về Cân Bằng\nCân bằng công việc và cuộc sống không có nghĩa là chia đều thời gian giữa công việc và các hoạt động cá nhân. Thay vào đó, điều quan trọng là tìm ra sự linh hoạt để bạn có thể hoàn thành công việc trong khi vẫn dành thời gian cho những thứ bạn yêu thích ([HBR](https://hbr.edu.vn/can-bang-giua-cong-viec-va-cuoc-song)).\n\n### 2. Tổ Chức Thời Gian\nHãy lên kế hoạch chi tiết cho từng ngày. Việc này không chỉ giúp bạn quản lý thời gian hiệu quả mà còn giúp bạn giải quyết công việc một cách kịp thời và có thời gian cho giải trí và các hoạt động xã hội ([HBR](https://hbr.edu.vn/can-bang-giua-cong-viec-va-cuoc-song)).\n\n### 3. Chăm Sóc Sức Khỏe Tinh Thần\nĐừng quên chú ý đến sức khỏe tinh thần của chính mình. Dành thời gian cho các hoạt động thư giãn, như yoga, thiền hoặc chỉ đơn giản là đi dạo, giúp bạn giảm stress và lấy lại năng lượng cần thiết cho công việc ([Hello Bacsi](https://hellobacsi.com/tam-ly-tam-than/van-de-tam-ly-tam-than/work-life-balance-la-gi/)).\n\n### 4. Đặt Giới Hạn Và Biết Nói \"Không\"\nTrong nhiều trường hợp, việc từ chối những yêu cầu không thật sự cần thiết là rất quan trọng. Điều này giúp bạn không bị quá tải và giữ cho bản thân có thời gian cho những điều quan trọng khác trong cuộc sống của mình ([Hello Bacsi](https://hellobacsi.com/tam-ly-tam-than/van-de-tam-ly-tam-than/work-life-balance-la-gi/)).\n\n## Kết Luận\n\nViệc rèn luyện thói quen dậy sớm và cân bằng giữa công việc và cuộc sống cá nhân là một hành trình đòi hỏi sự kiên nhẫn và quyết tâm. Tuy nhiên, với những phương pháp đã được chia sẻ ở trên, bạn hoàn toàn có thể bắt đầu quá trình này một cách hiệu quả. Hãy nhớ rằng sự cân bằng không chỉ làm bạn cảm thấy hạnh phúc hơn mà còn giúp bạn phát huy hết tiềm năng của bản thân trong công việc lẫn cuộc sống.\n\n---\n\n---\n### Tri thức Gối đầu giường từ Sách (BM25 & Cross-semantic Evaluation):\n- **Chủ nghĩa Khắc kỷ**: Cách rèn luyện nội tâm kiên cường trước nghịch cảnh\n  *Theo chủ nghĩa Khắc kỷ, nghịch cảnh không hại ta, mà chính cách ta phản ứng với nghịch cảnh mới làm tổn thương ta. Thực hành phương pháp 'Negative Visualization' (hình dung về tình huống xấu nhất) giúp ta chuẩn bị tâm lý vững vàng, trân trọng những gì đang có và luôn duy trì trạng thái bình yên trong tâm hồn trước mọi biến cố cuộc đời.*\n- **Nhà giả kim**: Bài học về việc theo đuổi ước mơ (Personal Legend)\n  *Cuốn sách Nhà giả kim khuyên chúng ta rằng mỗi người đều có một 'Vận mệnh cá nhân' (Personal Legend) để theo đuổi. Khi bạn thực sự khát khao một điều gì đó, cả vũ trụ sẽ hợp lực giúp bạn đạt được nó. Đừng từ bỏ ước mơ chỉ vì những trở ngại ban đầu, bởi vì hành trình đi tìm kho báu chính là quá trình rèn luyện bản thân ý nghĩa nhất.*\n",
+        "usage": {
+            "prompt_tokens": 5418,
+            "completion_tokens": 1757,
+            "total_tokens": 7175
+        }
+    }
+]

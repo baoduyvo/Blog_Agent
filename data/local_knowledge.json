@@ -1,0 +1,74 @@
+[
+    {
+        "id": "LK-001",
+        "book": "Nhà giả kim",
+        "topic": "Bài học về việc theo đuổi ước mơ (Personal Legend)",
+        "content": "Cuốn sách Nhà giả kim khuyên chúng ta rằng mỗi người đều có một 'Vận mệnh cá nhân' (Personal Legend) để theo đuổi. Khi bạn thực sự khát khao một điều gì đó, cả vũ trụ sẽ hợp lực giúp bạn đạt được nó. Đừng từ bỏ ước mơ chỉ vì những trở ngại ban đầu, bởi vì hành trình đi tìm kho báu chính là quá trình rèn luyện bản thân ý nghĩa nhất.",
+        "tags": [
+            "ước mơ",
+            "động lực",
+            "nhà giả kim",
+            "phát triển cá nhân"
+        ]
+    },
+    {
+        "id": "LK-002",
+        "book": "Nhà giả kim",
+        "topic": "Cách vượt qua nỗi sợ thất bại trên hành trình cuộc sống",
+        "content": "Nỗi sợ thất bại còn đáng sợ hơn chính thất bại đó. Santiago đã học được rằng trái tim của con người sợ phải chịu đau khổ, và nỗi sợ đau khổ còn tệ hơn bản thân việc phải chịu đau khổ. Khi chấp nhận rủi ro và lắng nghe tiếng nói bên trong tâm hồn, bạn sẽ vượt qua được mọi nỗi sợ hãi để tiến lên phía trước.",
+        "tags": [
+            "sợ hãi",
+            "thất bại",
+            "dũng cảm",
+            "nhà giả kim"
+        ]
+    },
+    {
+        "id": "LK-003",
+        "book": "Đắc nhân tâm",
+        "topic": "Nguyên tắc lắng nghe chân thành để xây dựng mối quan hệ",
+        "content": "Một trong những nghệ thuật giao tiếp quan trọng nhất của Đắc nhân tâm là trở thành người biết lắng nghe. Hãy khuyến khích người khác nói về bản thân họ. Lắng nghe chân thành thể hiện sự tôn trọng sâu sắc nhất đối với đối phương, giúp hóa giải mâu thuẫn và tạo dựng niềm tin bền vững trong cả cuộc sống và công việc.",
+        "tags": [
+            "lắng nghe",
+            "giao tiếp",
+            "mối quan hệ",
+            "đắc nhân tâm"
+        ]
+    },
+    {
+        "id": "LK-004",
+        "book": "Đắc nhân tâm",
+        "topic": "Tránh chỉ trích, oán trách và phán xét người khác",
+        "content": "Nguyên tắc đầu tiên của Đắc nhân tâm là không chỉ trích, oán trách hay than phiền. Chỉ trích là vô ích vì nó đặt người khác vào thế phòng thủ và thường khiến họ cố gắng tự bào chữa. Chỉ trích làm tổn thương lòng tự trọng và khơi gợi sự oán hận. Thay vì phán xét, hãy cố gắng thấu hiểu động cơ của họ.",
+        "tags": [
+            "chỉ trích",
+            "thấu hiểu",
+            "giao tiếp",
+            "đắc nhân tâm"
+        ]
+    },
+    {
+        "id": "LK-005",
+        "book": "Chủ nghĩa Khắc kỷ",
+        "topic": "Khái niệm Dichotomy of Control (Ranh giới kiểm soát)",
+        "content": "Triết lý Stoic (Khắc kỷ) nhấn mạnh việc chia mọi việc thành hai nhóm: Những việc ta có thể kiểm soát (suy nghĩ, phản ứng, hành động của bản thân) và những việc ta không thể kiểm soát (thời tiết, hành động của người khác, quá khứ, tương lai). Hạnh phúc thực sự đến từ việc tập trung tối đa nguồn lực vào nhóm thứ nhất và học cách chấp nhận nhóm thứ hai.",
+        "tags": [
+            "khắc kỷ",
+            "stoic",
+            "kiểm soát",
+            "hạnh phúc"
+        ]
+    },
+    {
+        "id": "LK-006",
+        "book": "Chủ nghĩa Khắc kỷ",
+        "topic": "Cách rèn luyện nội tâm kiên cường trước nghịch cảnh",
+        "content": "Theo chủ nghĩa Khắc kỷ, nghịch cảnh không hại ta, mà chính cách ta phản ứng với nghịch cảnh mới làm tổn thương ta. Thực hành phương pháp 'Negative Visualization' (hình dung về tình huống xấu nhất) giúp ta chuẩn bị tâm lý vững vàng, trân trọng những gì đang có và luôn duy trì trạng thái bình yên trong tâm hồn trước mọi biến cố cuộc đời.",
+        "tags": [
+            "nghịch cảnh",
+            "kiên cường",
+            "stoic",
+            "khắc kỷ"
+        ]
+    }
+]

@@ -1,0 +1,32 @@
+# Environment & Secret files
+.env
+.env*.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Node / Frontend
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# SQLite & Cache
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE / System
+.DS_Store
+.vscode/
+.idea/

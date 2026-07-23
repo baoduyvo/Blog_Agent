@@ -1,0 +1,165 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 28px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.editorCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(var(--text-secondary));
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.charCount {
+  font-size: 12px;
+  color: hsl(var(--text-muted));
+  align-self: flex-end;
+  margin-top: -4px;
+}
+
+.tagInputWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  min-height: 48px;
+  align-items: center;
+}
+
+.tagInputWrapper:focus-within {
+  border-color: hsl(var(--primary));
+  box-shadow: 0 0 0 3px var(--primary-glow);
+}
+
+.tagBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(139, 92, 246, 0.15);
+  color: hsl(var(--primary-hover));
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.tagBadge button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 0;
+}
+
+.tagInput {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: hsl(var(--text-primary));
+  font-family: inherit;
+  font-size: 14px;
+  min-width: 120px;
+}
+
+.sidebarCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: fit-content;
+}
+
+.sidebarTitle {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+}
+
+.promptList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.promptItem {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  font-size: 13px;
+  color: hsl(var(--text-secondary));
+  text-align: left;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  line-height: 1.5;
+}
+
+.promptItem:hover {
+  background: rgba(139, 92, 246, 0.08);
+  border-color: rgba(139, 92, 246, 0.2);
+  transform: translateX(4px);
+  color: #fff;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+  .buttonRow {
+    flex-direction: column;
+  }
+  .buttonRow button {
+    width: 100%;
+  }
+}
+
+.moodNoteInput {
+  margin-top: 8px;
+}
+
+.tipsList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+  color: hsl(var(--text-muted));
+  padding-left: 16px;
+}
+
+.tipsList li {
+  line-height: 1.5;
+}
